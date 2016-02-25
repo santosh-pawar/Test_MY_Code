@@ -1,0 +1,997 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5206F0351C6697E00049F199 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206F02C1C6697E00049F199 /* AppDelegate.swift */; };
+		5206F0361C6697E00049F199 /* FPMApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206F02D1C6697E00049F199 /* FPMApplication.swift */; };
+		5206F0371C6697E00049F199 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206F02E1C6697E00049F199 /* main.swift */; };
+		5206F0381C6697E00049F199 /* FPMHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206F0301C6697E00049F199 /* FPMHomeViewController.swift */; };
+		5206F0391C6697E00049F199 /* FPMSlideShowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206F0321C6697E00049F199 /* FPMSlideShowCollectionViewCell.swift */; };
+		5206F03A1C6697E00049F199 /* FPMSlideShowCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5206F0331C6697E00049F199 /* FPMSlideShowCollectionViewCell.xib */; };
+		5206F03B1C6697E00049F199 /* FPMSlideShowCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206F0341C6697E00049F199 /* FPMSlideShowCollectionViewController.swift */; };
+		5206F03E1C669C700049F199 /* FPMScanDressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206F03D1C669C700049F199 /* FPMScanDressViewController.swift */; };
+		5206F0421C6918C50049F199 /* FPMVideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206F0411C6918C50049F199 /* FPMVideoPlayerViewController.swift */; };
+		5206F0461C6920070049F199 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5206F0451C6920070049F199 /* video.mp4 */; };
+		5206F0491C6928B90049F199 /* FPMQuizMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206F0481C6928B90049F199 /* FPMQuizMainViewController.swift */; };
+		5206F0501C692A570049F199 /* FPMAboutFameAndPartnersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206F04F1C692A570049F199 /* FPMAboutFameAndPartnersViewController.swift */; };
+		5206F0541C692B3E0049F199 /* FPMSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206F0531C692B3E0049F199 /* FPMSettingsViewController.swift */; };
+		5206F0561C692BE10049F199 /* FPMBrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206F0551C692BE10049F199 /* FPMBrowseViewController.swift */; };
+		526274A81C6B8DE0004C160D /* FPMOverLaySearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526274A71C6B8DE0004C160D /* FPMOverLaySearchView.swift */; };
+		526274AA1C6B8DFC004C160D /* FPMOverLaySearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526274A91C6B8DFC004C160D /* FPMOverLaySearchView.xib */; };
+		526274AD1C6BDDE2004C160D /* FPMProductCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526274AB1C6BDDE2004C160D /* FPMProductCollectionReusableView.swift */; };
+		526274AE1C6BDDE2004C160D /* FPMProductCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526274AC1C6BDDE2004C160D /* FPMProductCollectionReusableView.xib */; };
+		526274D51C6D1672004C160D /* FPMFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526274D41C6D1672004C160D /* FPMFilterViewController.swift */; };
+		526274D71C6D2597004C160D /* FPMFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526274D61C6D2597004C160D /* FPMFilterView.swift */; };
+		526274D91C6D25A6004C160D /* FPMFilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526274D81C6D25A6004C160D /* FPMFilterView.xib */; };
+		526274FE1C6D4DE5004C160D /* FPMFilterCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526274FC1C6D4DE5004C160D /* FPMFilterCollectionReusableView.swift */; };
+		526274FF1C6D4DE5004C160D /* FPMFilterCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526274FD1C6D4DE5004C160D /* FPMFilterCollectionReusableView.xib */; };
+		526275011C6E3146004C160D /* FPMSingleLineReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526275001C6E3146004C160D /* FPMSingleLineReusableView.swift */; };
+		526275031C6E3176004C160D /* FPMFilterCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526275021C6E3176004C160D /* FPMFilterCollectionViewFlowLayout.swift */; };
+		526275051C710736004C160D /* BrowseFilters.json in Resources */ = {isa = PBXBuildFile; fileRef = 526275041C710735004C160D /* BrowseFilters.json */; };
+		526275091C710B55004C160D /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526275081C710B55004C160D /* SwiftyJSON.swift */; };
+		527FD6521C7B934E00C0A9C4 /* Freight-Big-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 527FD6481C7B91DB00C0A9C4 /* Freight-Big-Light.otf */; };
+		527FD6531C7B934E00C0A9C4 /* Freight-Disp-Book-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 527FD6491C7B91DB00C0A9C4 /* Freight-Disp-Book-Italic.otf */; };
+		527FD6541C7B934E00C0A9C4 /* Freight-Disp-Medium-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 527FD64A1C7B91DB00C0A9C4 /* Freight-Disp-Medium-Italic.otf */; };
+		527FD6551C7B934E00C0A9C4 /* Freight-Disp-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 527FD64B1C7B91DB00C0A9C4 /* Freight-Disp-Medium.otf */; };
+		527FD6561C7B934E00C0A9C4 /* Freight-Disp-Pro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 527FD64C1C7B91DB00C0A9C4 /* Freight-Disp-Pro-Bold.otf */; };
+		527FD6571C7B934E00C0A9C4 /* Freight-Disp-Pro-Medium-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 527FD64D1C7B91DB00C0A9C4 /* Freight-Disp-Pro-Medium-Italic.otf */; };
+		527FD6581C7B934F00C0A9C4 /* Freight-Disp-Pro-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 527FD64E1C7B91DB00C0A9C4 /* Freight-Disp-Pro-Medium.otf */; };
+		527FD6591C7B934F00C0A9C4 /* Freight-Disp-Pro-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 527FD64F1C7B91DB00C0A9C4 /* Freight-Disp-Pro-Semibold.otf */; };
+		527FD65A1C7B934F00C0A9C4 /* Freight-Disp-ProLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 527FD6501C7B91DB00C0A9C4 /* Freight-Disp-ProLight.otf */; };
+		527FD65D1C7BA2C800C0A9C4 /* FPMAppointmentCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527FD65C1C7BA2C800C0A9C4 /* FPMAppointmentCustomView.swift */; };
+		527FD65F1C7BA2D000C0A9C4 /* FPMAppointmentCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527FD65E1C7BA2D000C0A9C4 /* FPMAppointmentCustomView.xib */; };
+		527FD6611C7BC2AF00C0A9C4 /* FPMMagnifyingGlassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527FD6601C7BC2AE00C0A9C4 /* FPMMagnifyingGlassView.swift */; };
+		527FD6631C7BC2D300C0A9C4 /* FPMMagnifyingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527FD6621C7BC2D300C0A9C4 /* FPMMagnifyingView.swift */; };
+		527FD6661C7BC3F500C0A9C4 /* FPMPDPBottomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527FD6641C7BC3F500C0A9C4 /* FPMPDPBottomCollectionViewCell.swift */; };
+		527FD6671C7BC3F500C0A9C4 /* FPMPDPBottomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527FD6651C7BC3F500C0A9C4 /* FPMPDPBottomCollectionViewCell.xib */; };
+		527FD66A1C7BC60E00C0A9C4 /* FPMPDPThumbnailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527FD6681C7BC60E00C0A9C4 /* FPMPDPThumbnailCollectionViewCell.swift */; };
+		527FD66B1C7BC60E00C0A9C4 /* FPMPDPThumbnailCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527FD6691C7BC60E00C0A9C4 /* FPMPDPThumbnailCollectionViewCell.xib */; };
+		527FD66D1C7CDD6100C0A9C4 /* FPMPDPFitCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527FD66C1C7CDD6100C0A9C4 /* FPMPDPFitCustomView.xib */; };
+		527FD6701C7CE0CD00C0A9C4 /* FPMPDPFitCustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527FD66E1C7CE0CD00C0A9C4 /* FPMPDPFitCustomCollectionViewCell.swift */; };
+		527FD6711C7CE0CD00C0A9C4 /* FPMPDPFitCustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527FD66F1C7CE0CD00C0A9C4 /* FPMPDPFitCustomCollectionViewCell.xib */; };
+		527FD6731C7CEB7600C0A9C4 /* FPMPDPColorCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527FD6721C7CEB7600C0A9C4 /* FPMPDPColorCustomView.xib */; };
+		527FD6761C7CEBF100C0A9C4 /* FPMPDPColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527FD6741C7CEBF100C0A9C4 /* FPMPDPColorCollectionViewCell.swift */; };
+		527FD6771C7CEBF100C0A9C4 /* FPMPDPColorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527FD6751C7CEBF100C0A9C4 /* FPMPDPColorCollectionViewCell.xib */; };
+		527FD6791C7CF0C700C0A9C4 /* FPMPDPCustomizeCutomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527FD6781C7CF0C700C0A9C4 /* FPMPDPCustomizeCutomView.xib */; };
+		527FD67C1C7CF1A100C0A9C4 /* FPMPDPCustomizeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527FD67A1C7CF1A100C0A9C4 /* FPMPDPCustomizeCollectionViewCell.swift */; };
+		527FD67D1C7CF1A100C0A9C4 /* FPMPDPCustomizeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527FD67B1C7CF1A100C0A9C4 /* FPMPDPCustomizeCollectionViewCell.xib */; };
+		527FD67F1C7CF4DF00C0A9C4 /* FPMPDPOrderCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527FD67E1C7CF4DF00C0A9C4 /* FPMPDPOrderCustomView.swift */; };
+		527FD6811C7CF4EC00C0A9C4 /* FPMPDPOrderCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527FD6801C7CF4EC00C0A9C4 /* FPMPDPOrderCustomView.xib */; };
+		527FD6831C7D024B00C0A9C4 /* FPMPDPShareCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527FD6821C7D024B00C0A9C4 /* FPMPDPShareCustomView.xib */; };
+		527FD6861C7E02C500C0A9C4 /* FPMAdminLoginCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527FD6851C7E02C500C0A9C4 /* FPMAdminLoginCustomView.swift */; };
+		527FD6881C7E02CF00C0A9C4 /* FPMAdminLoginCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527FD6871C7E02CE00C0A9C4 /* FPMAdminLoginCustomView.xib */; };
+		527FD68A1C7E180900C0A9C4 /* FPMAdminListOfOrdersCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527FD6891C7E180900C0A9C4 /* FPMAdminListOfOrdersCustomView.swift */; };
+		527FD68C1C7E181400C0A9C4 /* FPMAdminListOfOrdersCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527FD68B1C7E181400C0A9C4 /* FPMAdminListOfOrdersCustomView.xib */; };
+		527FD68F1C7E20F600C0A9C4 /* FPMAdminOrdersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527FD68D1C7E20F600C0A9C4 /* FPMAdminOrdersTableViewCell.swift */; };
+		527FD6901C7E20F600C0A9C4 /* FPMAdminOrdersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527FD68E1C7E20F600C0A9C4 /* FPMAdminOrdersTableViewCell.xib */; };
+		528D84AA1C63EACC00EE0B36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528D84A81C63EACC00EE0B36 /* Main.storyboard */; };
+		528D84AD1C63EACC00EE0B36 /* FPMacys.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 528D84AB1C63EACC00EE0B36 /* FPMacys.xcdatamodeld */; };
+		528D84AF1C63EACC00EE0B36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 528D84AE1C63EACC00EE0B36 /* Assets.xcassets */; };
+		528D84B21C63EACC00EE0B36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528D84B01C63EACC00EE0B36 /* LaunchScreen.storyboard */; };
+		528D84BD1C63EACD00EE0B36 /* FPMacysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D84BC1C63EACD00EE0B36 /* FPMacysTests.swift */; };
+		528D84C81C63EACD00EE0B36 /* FPMacysUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D84C71C63EACD00EE0B36 /* FPMacysUITests.swift */; };
+		529400621C7F5CEB00007E61 /* FPMPDPPlaceOrderCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529400611C7F5CEB00007E61 /* FPMPDPPlaceOrderCustomView.swift */; };
+		529400641C7F5CFA00007E61 /* FPMPDPPlaceOrderCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 529400631C7F5CFA00007E61 /* FPMPDPPlaceOrderCustomView.xib */; };
+		529400661C7F7DB700007E61 /* FPMAdminChangePassswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 529400651C7F7DB700007E61 /* FPMAdminChangePassswordView.xib */; };
+		529400681C7F92E800007E61 /* FPMCustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529400671C7F92E800007E61 /* FPMCustomTextField.swift */; };
+		5294006A1C7F9D7C00007E61 /* FPMAdminChangePassswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529400691C7F9D7C00007E61 /* FPMAdminChangePassswordView.swift */; };
+		52ADEA391C77BB4600EDB5D3 /* Brandon_bld_it.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52ADEA2D1C77BB3600EDB5D3 /* Brandon_bld_it.otf */; };
+		52ADEA3A1C77BB4600EDB5D3 /* Brandon_bld.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52ADEA2E1C77BB3600EDB5D3 /* Brandon_bld.otf */; };
+		52ADEA3B1C77BB4600EDB5D3 /* Brandon_blk_it.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52ADEA2F1C77BB3700EDB5D3 /* Brandon_blk_it.otf */; };
+		52ADEA3C1C77BB4600EDB5D3 /* Brandon_blk.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52ADEA301C77BB3700EDB5D3 /* Brandon_blk.otf */; };
+		52ADEA3D1C77BB4600EDB5D3 /* Brandon_light_it.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52ADEA311C77BB3700EDB5D3 /* Brandon_light_it.otf */; };
+		52ADEA3E1C77BB4600EDB5D3 /* Brandon_light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52ADEA321C77BB3700EDB5D3 /* Brandon_light.otf */; };
+		52ADEA3F1C77BB4600EDB5D3 /* Brandon_med_it.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52ADEA331C77BB3700EDB5D3 /* Brandon_med_it.otf */; };
+		52ADEA401C77BB4600EDB5D3 /* Brandon_med.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52ADEA341C77BB3700EDB5D3 /* Brandon_med.otf */; };
+		52ADEA411C77BB4600EDB5D3 /* Brandon_reg_it.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52ADEA351C77BB3700EDB5D3 /* Brandon_reg_it.otf */; };
+		52ADEA421C77BB4600EDB5D3 /* Brandon_reg.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52ADEA361C77BB3700EDB5D3 /* Brandon_reg.otf */; };
+		52ADEA431C77BB4600EDB5D3 /* Brandon_thin_it.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52ADEA371C77BB3700EDB5D3 /* Brandon_thin_it.otf */; };
+		52ADEA441C77BB4600EDB5D3 /* Brandon_thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52ADEA381C77BB3700EDB5D3 /* Brandon_thin.otf */; };
+		52ADEA5A1C77BE0D00EDB5D3 /* FPMPDPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ADEA591C77BE0D00EDB5D3 /* FPMPDPViewController.swift */; };
+		52ADEA5C1C77BE6A00EDB5D3 /* FPMPDPShareCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ADEA5B1C77BE6A00EDB5D3 /* FPMPDPShareCustomView.swift */; };
+		52ADEA5E1C77BEFB00EDB5D3 /* FPMPDPFitCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ADEA5D1C77BEFB00EDB5D3 /* FPMPDPFitCustomView.swift */; };
+		52ADEA601C77BF1700EDB5D3 /* FPMPDPColorCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ADEA5F1C77BF1700EDB5D3 /* FPMPDPColorCustomView.swift */; };
+		52ADEA621C77BF7F00EDB5D3 /* FPMPDPCustomizeCutomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ADEA611C77BF7F00EDB5D3 /* FPMPDPCustomizeCutomView.swift */; };
+		52ADEA641C77CA0200EDB5D3 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ADEA631C77CA0200EDB5D3 /* UIColorExtension.swift */; };
+		52ADEA661C77CD2400EDB5D3 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ADEA651C77CD2400EDB5D3 /* StringExtension.swift */; };
+		52ADEA681C77CE2E00EDB5D3 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ADEA671C77CE2E00EDB5D3 /* UIFontExtension.swift */; };
+		52ADEA6A1C77D06400EDB5D3 /* FPMSortByTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ADEA691C77D06400EDB5D3 /* FPMSortByTableViewController.swift */; };
+		52ADEA6B1C77D91400EDB5D3 /* FPMSortByTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ADEA691C77D06400EDB5D3 /* FPMSortByTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		528D84B91C63EACC00EE0B36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 528D84991C63EACC00EE0B36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 528D84A01C63EACC00EE0B36;
+			remoteInfo = FPMacys;
+		};
+		528D84C41C63EACD00EE0B36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 528D84991C63EACC00EE0B36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 528D84A01C63EACC00EE0B36;
+			remoteInfo = FPMacys;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5206F02C1C6697E00049F199 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5206F02D1C6697E00049F199 /* FPMApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMApplication.swift; sourceTree = "<group>"; };
+		5206F02E1C6697E00049F199 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5206F0301C6697E00049F199 /* FPMHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMHomeViewController.swift; sourceTree = "<group>"; };
+		5206F0321C6697E00049F199 /* FPMSlideShowCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMSlideShowCollectionViewCell.swift; sourceTree = "<group>"; };
+		5206F0331C6697E00049F199 /* FPMSlideShowCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPMSlideShowCollectionViewCell.xib; sourceTree = "<group>"; };
+		5206F0341C6697E00049F199 /* FPMSlideShowCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMSlideShowCollectionViewController.swift; sourceTree = "<group>"; };
+		5206F03D1C669C700049F199 /* FPMScanDressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FPMScanDressViewController.swift; path = Source/ScanDress/FPMScanDressViewController.swift; sourceTree = "<group>"; };
+		5206F0411C6918C50049F199 /* FPMVideoPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMVideoPlayerViewController.swift; sourceTree = "<group>"; };
+		5206F0451C6920070049F199 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
+		5206F0481C6928B90049F199 /* FPMQuizMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMQuizMainViewController.swift; sourceTree = "<group>"; };
+		5206F04F1C692A570049F199 /* FPMAboutFameAndPartnersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMAboutFameAndPartnersViewController.swift; sourceTree = "<group>"; };
+		5206F0531C692B3E0049F199 /* FPMSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMSettingsViewController.swift; sourceTree = "<group>"; };
+		5206F0551C692BE10049F199 /* FPMBrowseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMBrowseViewController.swift; sourceTree = "<group>"; };
+		526274A71C6B8DE0004C160D /* FPMOverLaySearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMOverLaySearchView.swift; sourceTree = "<group>"; };
+		526274A91C6B8DFC004C160D /* FPMOverLaySearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPMOverLaySearchView.xib; sourceTree = "<group>"; };
+		526274AB1C6BDDE2004C160D /* FPMProductCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMProductCollectionReusableView.swift; sourceTree = "<group>"; };
+		526274AC1C6BDDE2004C160D /* FPMProductCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPMProductCollectionReusableView.xib; sourceTree = "<group>"; };
+		526274D41C6D1672004C160D /* FPMFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMFilterViewController.swift; sourceTree = "<group>"; };
+		526274D61C6D2597004C160D /* FPMFilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMFilterView.swift; sourceTree = "<group>"; };
+		526274D81C6D25A6004C160D /* FPMFilterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPMFilterView.xib; sourceTree = "<group>"; };
+		526274FC1C6D4DE5004C160D /* FPMFilterCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMFilterCollectionReusableView.swift; sourceTree = "<group>"; };
+		526274FD1C6D4DE5004C160D /* FPMFilterCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPMFilterCollectionReusableView.xib; sourceTree = "<group>"; };
+		526275001C6E3146004C160D /* FPMSingleLineReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMSingleLineReusableView.swift; sourceTree = "<group>"; };
+		526275021C6E3176004C160D /* FPMFilterCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMFilterCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		526275041C710735004C160D /* BrowseFilters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BrowseFilters.json; sourceTree = "<group>"; };
+		526275081C710B55004C160D /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../../../SwiftyJSON.swift; sourceTree = "<group>"; };
+		527FD6481C7B91DB00C0A9C4 /* Freight-Big-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Freight-Big-Light.otf"; sourceTree = "<group>"; };
+		527FD6491C7B91DB00C0A9C4 /* Freight-Disp-Book-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Freight-Disp-Book-Italic.otf"; sourceTree = "<group>"; };
+		527FD64A1C7B91DB00C0A9C4 /* Freight-Disp-Medium-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Freight-Disp-Medium-Italic.otf"; sourceTree = "<group>"; };
+		527FD64B1C7B91DB00C0A9C4 /* Freight-Disp-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Freight-Disp-Medium.otf"; sourceTree = "<group>"; };
+		527FD64C1C7B91DB00C0A9C4 /* Freight-Disp-Pro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Freight-Disp-Pro-Bold.otf"; sourceTree = "<group>"; };
+		527FD64D1C7B91DB00C0A9C4 /* Freight-Disp-Pro-Medium-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Freight-Disp-Pro-Medium-Italic.otf"; sourceTree = "<group>"; };
+		527FD64E1C7B91DB00C0A9C4 /* Freight-Disp-Pro-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Freight-Disp-Pro-Medium.otf"; sourceTree = "<group>"; };
+		527FD64F1C7B91DB00C0A9C4 /* Freight-Disp-Pro-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Freight-Disp-Pro-Semibold.otf"; sourceTree = "<group>"; };
+		527FD6501C7B91DB00C0A9C4 /* Freight-Disp-ProLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Freight-Disp-ProLight.otf"; sourceTree = "<group>"; };
+		527FD65C1C7BA2C800C0A9C4 /* FPMAppointmentCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMAppointmentCustomView.swift; sourceTree = "<group>"; };
+		527FD65E1C7BA2D000C0A9C4 /* FPMAppointmentCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPMAppointmentCustomView.xib; sourceTree = "<group>"; };
+		527FD6601C7BC2AE00C0A9C4 /* FPMMagnifyingGlassView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMMagnifyingGlassView.swift; sourceTree = "<group>"; };
+		527FD6621C7BC2D300C0A9C4 /* FPMMagnifyingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMMagnifyingView.swift; sourceTree = "<group>"; };
+		527FD6641C7BC3F500C0A9C4 /* FPMPDPBottomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMPDPBottomCollectionViewCell.swift; sourceTree = "<group>"; };
+		527FD6651C7BC3F500C0A9C4 /* FPMPDPBottomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPMPDPBottomCollectionViewCell.xib; sourceTree = "<group>"; };
+		527FD6681C7BC60E00C0A9C4 /* FPMPDPThumbnailCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMPDPThumbnailCollectionViewCell.swift; sourceTree = "<group>"; };
+		527FD6691C7BC60E00C0A9C4 /* FPMPDPThumbnailCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPMPDPThumbnailCollectionViewCell.xib; sourceTree = "<group>"; };
+		527FD66C1C7CDD6100C0A9C4 /* FPMPDPFitCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPMPDPFitCustomView.xib; sourceTree = "<group>"; };
+		527FD66E1C7CE0CD00C0A9C4 /* FPMPDPFitCustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMPDPFitCustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		527FD66F1C7CE0CD00C0A9C4 /* FPMPDPFitCustomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPMPDPFitCustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		527FD6721C7CEB7600C0A9C4 /* FPMPDPColorCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPMPDPColorCustomView.xib; sourceTree = "<group>"; };
+		527FD6741C7CEBF100C0A9C4 /* FPMPDPColorCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMPDPColorCollectionViewCell.swift; sourceTree = "<group>"; };
+		527FD6751C7CEBF100C0A9C4 /* FPMPDPColorCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPMPDPColorCollectionViewCell.xib; sourceTree = "<group>"; };
+		527FD6781C7CF0C700C0A9C4 /* FPMPDPCustomizeCutomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPMPDPCustomizeCutomView.xib; sourceTree = "<group>"; };
+		527FD67A1C7CF1A100C0A9C4 /* FPMPDPCustomizeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMPDPCustomizeCollectionViewCell.swift; sourceTree = "<group>"; };
+		527FD67B1C7CF1A100C0A9C4 /* FPMPDPCustomizeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPMPDPCustomizeCollectionViewCell.xib; sourceTree = "<group>"; };
+		527FD67E1C7CF4DF00C0A9C4 /* FPMPDPOrderCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMPDPOrderCustomView.swift; sourceTree = "<group>"; };
+		527FD6801C7CF4EC00C0A9C4 /* FPMPDPOrderCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPMPDPOrderCustomView.xib; sourceTree = "<group>"; };
+		527FD6821C7D024B00C0A9C4 /* FPMPDPShareCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPMPDPShareCustomView.xib; sourceTree = "<group>"; };
+		527FD6851C7E02C500C0A9C4 /* FPMAdminLoginCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMAdminLoginCustomView.swift; sourceTree = "<group>"; };
+		527FD6871C7E02CE00C0A9C4 /* FPMAdminLoginCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPMAdminLoginCustomView.xib; sourceTree = "<group>"; };
+		527FD6891C7E180900C0A9C4 /* FPMAdminListOfOrdersCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMAdminListOfOrdersCustomView.swift; sourceTree = "<group>"; };
+		527FD68B1C7E181400C0A9C4 /* FPMAdminListOfOrdersCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPMAdminListOfOrdersCustomView.xib; sourceTree = "<group>"; };
+		527FD68D1C7E20F600C0A9C4 /* FPMAdminOrdersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMAdminOrdersTableViewCell.swift; sourceTree = "<group>"; };
+		527FD68E1C7E20F600C0A9C4 /* FPMAdminOrdersTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPMAdminOrdersTableViewCell.xib; sourceTree = "<group>"; };
+		528D84A11C63EACC00EE0B36 /* FPMacys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FPMacys.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		528D84A91C63EACC00EE0B36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		528D84AC1C63EACC00EE0B36 /* FPMacys.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FPMacys.xcdatamodel; sourceTree = "<group>"; };
+		528D84AE1C63EACC00EE0B36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		528D84B11C63EACC00EE0B36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		528D84B31C63EACC00EE0B36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		528D84B81C63EACC00EE0B36 /* FPMacysTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FPMacysTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		528D84BC1C63EACD00EE0B36 /* FPMacysTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPMacysTests.swift; sourceTree = "<group>"; };
+		528D84BE1C63EACD00EE0B36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		528D84C31C63EACD00EE0B36 /* FPMacysUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FPMacysUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		528D84C71C63EACD00EE0B36 /* FPMacysUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPMacysUITests.swift; sourceTree = "<group>"; };
+		528D84C91C63EACD00EE0B36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		529400611C7F5CEB00007E61 /* FPMPDPPlaceOrderCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMPDPPlaceOrderCustomView.swift; sourceTree = "<group>"; };
+		529400631C7F5CFA00007E61 /* FPMPDPPlaceOrderCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPMPDPPlaceOrderCustomView.xib; sourceTree = "<group>"; };
+		529400651C7F7DB700007E61 /* FPMAdminChangePassswordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPMAdminChangePassswordView.xib; sourceTree = "<group>"; };
+		529400671C7F92E800007E61 /* FPMCustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMCustomTextField.swift; sourceTree = "<group>"; };
+		529400691C7F9D7C00007E61 /* FPMAdminChangePassswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMAdminChangePassswordView.swift; sourceTree = "<group>"; };
+		52ADEA2D1C77BB3600EDB5D3 /* Brandon_bld_it.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_bld_it.otf; sourceTree = "<group>"; };
+		52ADEA2E1C77BB3600EDB5D3 /* Brandon_bld.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_bld.otf; sourceTree = "<group>"; };
+		52ADEA2F1C77BB3700EDB5D3 /* Brandon_blk_it.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_blk_it.otf; sourceTree = "<group>"; };
+		52ADEA301C77BB3700EDB5D3 /* Brandon_blk.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_blk.otf; sourceTree = "<group>"; };
+		52ADEA311C77BB3700EDB5D3 /* Brandon_light_it.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_light_it.otf; sourceTree = "<group>"; };
+		52ADEA321C77BB3700EDB5D3 /* Brandon_light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_light.otf; sourceTree = "<group>"; };
+		52ADEA331C77BB3700EDB5D3 /* Brandon_med_it.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_med_it.otf; sourceTree = "<group>"; };
+		52ADEA341C77BB3700EDB5D3 /* Brandon_med.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_med.otf; sourceTree = "<group>"; };
+		52ADEA351C77BB3700EDB5D3 /* Brandon_reg_it.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_reg_it.otf; sourceTree = "<group>"; };
+		52ADEA361C77BB3700EDB5D3 /* Brandon_reg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_reg.otf; sourceTree = "<group>"; };
+		52ADEA371C77BB3700EDB5D3 /* Brandon_thin_it.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_thin_it.otf; sourceTree = "<group>"; };
+		52ADEA381C77BB3700EDB5D3 /* Brandon_thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_thin.otf; sourceTree = "<group>"; };
+		52ADEA591C77BE0D00EDB5D3 /* FPMPDPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMPDPViewController.swift; sourceTree = "<group>"; };
+		52ADEA5B1C77BE6A00EDB5D3 /* FPMPDPShareCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMPDPShareCustomView.swift; sourceTree = "<group>"; };
+		52ADEA5D1C77BEFB00EDB5D3 /* FPMPDPFitCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMPDPFitCustomView.swift; sourceTree = "<group>"; };
+		52ADEA5F1C77BF1700EDB5D3 /* FPMPDPColorCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMPDPColorCustomView.swift; sourceTree = "<group>"; };
+		52ADEA611C77BF7F00EDB5D3 /* FPMPDPCustomizeCutomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMPDPCustomizeCutomView.swift; sourceTree = "<group>"; };
+		52ADEA631C77CA0200EDB5D3 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		52ADEA651C77CD2400EDB5D3 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		52ADEA671C77CE2E00EDB5D3 /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		52ADEA691C77D06400EDB5D3 /* FPMSortByTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMSortByTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		528D849E1C63EACC00EE0B36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		528D84B51C63EACC00EE0B36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		528D84C01C63EACD00EE0B36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5206F02B1C6697E00049F199 /* ApplicationDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				5206F02C1C6697E00049F199 /* AppDelegate.swift */,
+				5206F02D1C6697E00049F199 /* FPMApplication.swift */,
+				5206F02E1C6697E00049F199 /* main.swift */,
+			);
+			name = ApplicationDelegates;
+			path = Source/ApplicationDelegates;
+			sourceTree = "<group>";
+		};
+		5206F02F1C6697E00049F199 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5206F0301C6697E00049F199 /* FPMHomeViewController.swift */,
+			);
+			name = Home;
+			path = Source/Home;
+			sourceTree = "<group>";
+		};
+		5206F0311C6697E00049F199 /* SlideShow */ = {
+			isa = PBXGroup;
+			children = (
+				5206F0411C6918C50049F199 /* FPMVideoPlayerViewController.swift */,
+				5206F0341C6697E00049F199 /* FPMSlideShowCollectionViewController.swift */,
+				5206F0321C6697E00049F199 /* FPMSlideShowCollectionViewCell.swift */,
+				5206F0331C6697E00049F199 /* FPMSlideShowCollectionViewCell.xib */,
+			);
+			name = SlideShow;
+			path = Source/SlideShow;
+			sourceTree = "<group>";
+		};
+		5206F03C1C669C2B0049F199 /* ScanDress */ = {
+			isa = PBXGroup;
+			children = (
+				5206F03D1C669C700049F199 /* FPMScanDressViewController.swift */,
+			);
+			name = ScanDress;
+			sourceTree = "<group>";
+		};
+		5206F0441C6920070049F199 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				527FD6481C7B91DB00C0A9C4 /* Freight-Big-Light.otf */,
+				527FD6491C7B91DB00C0A9C4 /* Freight-Disp-Book-Italic.otf */,
+				527FD64A1C7B91DB00C0A9C4 /* Freight-Disp-Medium-Italic.otf */,
+				527FD64B1C7B91DB00C0A9C4 /* Freight-Disp-Medium.otf */,
+				527FD64C1C7B91DB00C0A9C4 /* Freight-Disp-Pro-Bold.otf */,
+				527FD64D1C7B91DB00C0A9C4 /* Freight-Disp-Pro-Medium-Italic.otf */,
+				527FD64E1C7B91DB00C0A9C4 /* Freight-Disp-Pro-Medium.otf */,
+				527FD64F1C7B91DB00C0A9C4 /* Freight-Disp-Pro-Semibold.otf */,
+				527FD6501C7B91DB00C0A9C4 /* Freight-Disp-ProLight.otf */,
+				52ADEA2D1C77BB3600EDB5D3 /* Brandon_bld_it.otf */,
+				52ADEA2E1C77BB3600EDB5D3 /* Brandon_bld.otf */,
+				52ADEA2F1C77BB3700EDB5D3 /* Brandon_blk_it.otf */,
+				52ADEA301C77BB3700EDB5D3 /* Brandon_blk.otf */,
+				52ADEA311C77BB3700EDB5D3 /* Brandon_light_it.otf */,
+				52ADEA321C77BB3700EDB5D3 /* Brandon_light.otf */,
+				52ADEA331C77BB3700EDB5D3 /* Brandon_med_it.otf */,
+				52ADEA341C77BB3700EDB5D3 /* Brandon_med.otf */,
+				52ADEA351C77BB3700EDB5D3 /* Brandon_reg_it.otf */,
+				52ADEA361C77BB3700EDB5D3 /* Brandon_reg.otf */,
+				52ADEA371C77BB3700EDB5D3 /* Brandon_thin_it.otf */,
+				52ADEA381C77BB3700EDB5D3 /* Brandon_thin.otf */,
+				5206F0451C6920070049F199 /* video.mp4 */,
+				526275041C710735004C160D /* BrowseFilters.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5206F0471C6928970049F199 /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				5206F0481C6928B90049F199 /* FPMQuizMainViewController.swift */,
+			);
+			name = Quiz;
+			path = Source/Quiz;
+			sourceTree = "<group>";
+		};
+		5206F04A1C692A340049F199 /* AboutF&P */ = {
+			isa = PBXGroup;
+			children = (
+				5206F04F1C692A570049F199 /* FPMAboutFameAndPartnersViewController.swift */,
+			);
+			name = "AboutF&P";
+			path = "Source/AboutF&P";
+			sourceTree = "<group>";
+		};
+		5206F04B1C692A340049F199 /* Appointment */ = {
+			isa = PBXGroup;
+			children = (
+				527FD65C1C7BA2C800C0A9C4 /* FPMAppointmentCustomView.swift */,
+				527FD65E1C7BA2D000C0A9C4 /* FPMAppointmentCustomView.xib */,
+			);
+			name = Appointment;
+			path = Source/Appointment;
+			sourceTree = "<group>";
+		};
+		5206F04C1C692A340049F199 /* AppSettings */ = {
+			isa = PBXGroup;
+			children = (
+				5206F0531C692B3E0049F199 /* FPMSettingsViewController.swift */,
+			);
+			name = AppSettings;
+			path = Source/AppSettings;
+			sourceTree = "<group>";
+		};
+		5206F04D1C692A340049F199 /* Browse */ = {
+			isa = PBXGroup;
+			children = (
+				5206F0551C692BE10049F199 /* FPMBrowseViewController.swift */,
+				526274FC1C6D4DE5004C160D /* FPMFilterCollectionReusableView.swift */,
+				526274FD1C6D4DE5004C160D /* FPMFilterCollectionReusableView.xib */,
+				526274AB1C6BDDE2004C160D /* FPMProductCollectionReusableView.swift */,
+				526274AC1C6BDDE2004C160D /* FPMProductCollectionReusableView.xib */,
+				526274D41C6D1672004C160D /* FPMFilterViewController.swift */,
+				526274D61C6D2597004C160D /* FPMFilterView.swift */,
+				526274D81C6D25A6004C160D /* FPMFilterView.xib */,
+				526275001C6E3146004C160D /* FPMSingleLineReusableView.swift */,
+				526275021C6E3176004C160D /* FPMFilterCollectionViewFlowLayout.swift */,
+				52ADEA691C77D06400EDB5D3 /* FPMSortByTableViewController.swift */,
+			);
+			name = Browse;
+			path = Source/Browse;
+			sourceTree = "<group>";
+		};
+		5206F04E1C692A340049F199 /* PDP */ = {
+			isa = PBXGroup;
+			children = (
+				52ADEA591C77BE0D00EDB5D3 /* FPMPDPViewController.swift */,
+				52ADEA5D1C77BEFB00EDB5D3 /* FPMPDPFitCustomView.swift */,
+				527FD66C1C7CDD6100C0A9C4 /* FPMPDPFitCustomView.xib */,
+				52ADEA5F1C77BF1700EDB5D3 /* FPMPDPColorCustomView.swift */,
+				527FD6721C7CEB7600C0A9C4 /* FPMPDPColorCustomView.xib */,
+				527FD6741C7CEBF100C0A9C4 /* FPMPDPColorCollectionViewCell.swift */,
+				527FD6751C7CEBF100C0A9C4 /* FPMPDPColorCollectionViewCell.xib */,
+				52ADEA611C77BF7F00EDB5D3 /* FPMPDPCustomizeCutomView.swift */,
+				527FD6781C7CF0C700C0A9C4 /* FPMPDPCustomizeCutomView.xib */,
+				527FD67A1C7CF1A100C0A9C4 /* FPMPDPCustomizeCollectionViewCell.swift */,
+				527FD67B1C7CF1A100C0A9C4 /* FPMPDPCustomizeCollectionViewCell.xib */,
+				527FD6641C7BC3F500C0A9C4 /* FPMPDPBottomCollectionViewCell.swift */,
+				527FD6651C7BC3F500C0A9C4 /* FPMPDPBottomCollectionViewCell.xib */,
+				527FD6681C7BC60E00C0A9C4 /* FPMPDPThumbnailCollectionViewCell.swift */,
+				527FD6691C7BC60E00C0A9C4 /* FPMPDPThumbnailCollectionViewCell.xib */,
+				527FD66E1C7CE0CD00C0A9C4 /* FPMPDPFitCustomCollectionViewCell.swift */,
+				527FD66F1C7CE0CD00C0A9C4 /* FPMPDPFitCustomCollectionViewCell.xib */,
+				527FD67E1C7CF4DF00C0A9C4 /* FPMPDPOrderCustomView.swift */,
+				527FD6801C7CF4EC00C0A9C4 /* FPMPDPOrderCustomView.xib */,
+				529400611C7F5CEB00007E61 /* FPMPDPPlaceOrderCustomView.swift */,
+				529400631C7F5CFA00007E61 /* FPMPDPPlaceOrderCustomView.xib */,
+				52ADEA5B1C77BE6A00EDB5D3 /* FPMPDPShareCustomView.swift */,
+				527FD6821C7D024B00C0A9C4 /* FPMPDPShareCustomView.xib */,
+			);
+			name = PDP;
+			path = Source/PDP;
+			sourceTree = "<group>";
+		};
+		526274A61C6B8DC0004C160D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				526275081C710B55004C160D /* SwiftyJSON.swift */,
+				526274A71C6B8DE0004C160D /* FPMOverLaySearchView.swift */,
+				526274A91C6B8DFC004C160D /* FPMOverLaySearchView.xib */,
+				52ADEA631C77CA0200EDB5D3 /* UIColorExtension.swift */,
+				52ADEA651C77CD2400EDB5D3 /* StringExtension.swift */,
+				52ADEA671C77CE2E00EDB5D3 /* UIFontExtension.swift */,
+				527FD6601C7BC2AE00C0A9C4 /* FPMMagnifyingGlassView.swift */,
+				527FD6621C7BC2D300C0A9C4 /* FPMMagnifyingView.swift */,
+				529400671C7F92E800007E61 /* FPMCustomTextField.swift */,
+			);
+			name = Utilities;
+			path = Source/Utilities;
+			sourceTree = "<group>";
+		};
+		527FD6841C7E02AB00C0A9C4 /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				527FD6851C7E02C500C0A9C4 /* FPMAdminLoginCustomView.swift */,
+				527FD6871C7E02CE00C0A9C4 /* FPMAdminLoginCustomView.xib */,
+				527FD6891C7E180900C0A9C4 /* FPMAdminListOfOrdersCustomView.swift */,
+				527FD68B1C7E181400C0A9C4 /* FPMAdminListOfOrdersCustomView.xib */,
+				529400691C7F9D7C00007E61 /* FPMAdminChangePassswordView.swift */,
+				529400651C7F7DB700007E61 /* FPMAdminChangePassswordView.xib */,
+				527FD68D1C7E20F600C0A9C4 /* FPMAdminOrdersTableViewCell.swift */,
+				527FD68E1C7E20F600C0A9C4 /* FPMAdminOrdersTableViewCell.xib */,
+			);
+			name = Admin;
+			path = Source/Admin;
+			sourceTree = "<group>";
+		};
+		528D84981C63EACC00EE0B36 = {
+			isa = PBXGroup;
+			children = (
+				528D84A31C63EACC00EE0B36 /* FPMacys */,
+				528D84BB1C63EACD00EE0B36 /* FPMacysTests */,
+				528D84C61C63EACD00EE0B36 /* FPMacysUITests */,
+				528D84A21C63EACC00EE0B36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		528D84A21C63EACC00EE0B36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				528D84A11C63EACC00EE0B36 /* FPMacys.app */,
+				528D84B81C63EACC00EE0B36 /* FPMacysTests.xctest */,
+				528D84C31C63EACD00EE0B36 /* FPMacysUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		528D84A31C63EACC00EE0B36 /* FPMacys */ = {
+			isa = PBXGroup;
+			children = (
+				5206F04A1C692A340049F199 /* AboutF&P */,
+				527FD6841C7E02AB00C0A9C4 /* Admin */,
+				5206F02B1C6697E00049F199 /* ApplicationDelegates */,
+				5206F04B1C692A340049F199 /* Appointment */,
+				5206F04C1C692A340049F199 /* AppSettings */,
+				5206F04D1C692A340049F199 /* Browse */,
+				5206F02F1C6697E00049F199 /* Home */,
+				5206F04E1C692A340049F199 /* PDP */,
+				5206F0471C6928970049F199 /* Quiz */,
+				5206F03C1C669C2B0049F199 /* ScanDress */,
+				5206F0311C6697E00049F199 /* SlideShow */,
+				526274A61C6B8DC0004C160D /* Utilities */,
+				528D84AE1C63EACC00EE0B36 /* Assets.xcassets */,
+				528D84A81C63EACC00EE0B36 /* Main.storyboard */,
+				528D84B01C63EACC00EE0B36 /* LaunchScreen.storyboard */,
+				528D84B31C63EACC00EE0B36 /* Info.plist */,
+				528D84AB1C63EACC00EE0B36 /* FPMacys.xcdatamodeld */,
+				5206F0441C6920070049F199 /* Resources */,
+			);
+			path = FPMacys;
+			sourceTree = "<group>";
+		};
+		528D84BB1C63EACD00EE0B36 /* FPMacysTests */ = {
+			isa = PBXGroup;
+			children = (
+				528D84BC1C63EACD00EE0B36 /* FPMacysTests.swift */,
+				528D84BE1C63EACD00EE0B36 /* Info.plist */,
+			);
+			path = FPMacysTests;
+			sourceTree = "<group>";
+		};
+		528D84C61C63EACD00EE0B36 /* FPMacysUITests */ = {
+			isa = PBXGroup;
+			children = (
+				528D84C71C63EACD00EE0B36 /* FPMacysUITests.swift */,
+				528D84C91C63EACD00EE0B36 /* Info.plist */,
+			);
+			path = FPMacysUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		528D84A01C63EACC00EE0B36 /* FPMacys */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 528D84CC1C63EACD00EE0B36 /* Build configuration list for PBXNativeTarget "FPMacys" */;
+			buildPhases = (
+				528D849D1C63EACC00EE0B36 /* Sources */,
+				528D849E1C63EACC00EE0B36 /* Frameworks */,
+				528D849F1C63EACC00EE0B36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FPMacys;
+			productName = FPMacys;
+			productReference = 528D84A11C63EACC00EE0B36 /* FPMacys.app */;
+			productType = "com.apple.product-type.application";
+		};
+		528D84B71C63EACC00EE0B36 /* FPMacysTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 528D84CF1C63EACD00EE0B36 /* Build configuration list for PBXNativeTarget "FPMacysTests" */;
+			buildPhases = (
+				528D84B41C63EACC00EE0B36 /* Sources */,
+				528D84B51C63EACC00EE0B36 /* Frameworks */,
+				528D84B61C63EACC00EE0B36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				528D84BA1C63EACC00EE0B36 /* PBXTargetDependency */,
+			);
+			name = FPMacysTests;
+			productName = FPMacysTests;
+			productReference = 528D84B81C63EACC00EE0B36 /* FPMacysTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		528D84C21C63EACD00EE0B36 /* FPMacysUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 528D84D21C63EACD00EE0B36 /* Build configuration list for PBXNativeTarget "FPMacysUITests" */;
+			buildPhases = (
+				528D84BF1C63EACD00EE0B36 /* Sources */,
+				528D84C01C63EACD00EE0B36 /* Frameworks */,
+				528D84C11C63EACD00EE0B36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				528D84C51C63EACD00EE0B36 /* PBXTargetDependency */,
+			);
+			name = FPMacysUITests;
+			productName = FPMacysUITests;
+			productReference = 528D84C31C63EACD00EE0B36 /* FPMacysUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		528D84991C63EACC00EE0B36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Macy's, Inc.";
+				TargetAttributes = {
+					528D84A01C63EACC00EE0B36 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = METF7ZXEP6;
+					};
+					528D84B71C63EACC00EE0B36 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 528D84A01C63EACC00EE0B36;
+					};
+					528D84C21C63EACD00EE0B36 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 528D84A01C63EACC00EE0B36;
+					};
+				};
+			};
+			buildConfigurationList = 528D849C1C63EACC00EE0B36 /* Build configuration list for PBXProject "FPMacys" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 528D84981C63EACC00EE0B36;
+			productRefGroup = 528D84A21C63EACC00EE0B36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				528D84A01C63EACC00EE0B36 /* FPMacys */,
+				528D84B71C63EACC00EE0B36 /* FPMacysTests */,
+				528D84C21C63EACD00EE0B36 /* FPMacysUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		528D849F1C63EACC00EE0B36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				527FD6521C7B934E00C0A9C4 /* Freight-Big-Light.otf in Resources */,
+				527FD6531C7B934E00C0A9C4 /* Freight-Disp-Book-Italic.otf in Resources */,
+				527FD66D1C7CDD6100C0A9C4 /* FPMPDPFitCustomView.xib in Resources */,
+				527FD6541C7B934E00C0A9C4 /* Freight-Disp-Medium-Italic.otf in Resources */,
+				527FD6881C7E02CF00C0A9C4 /* FPMAdminLoginCustomView.xib in Resources */,
+				527FD6551C7B934E00C0A9C4 /* Freight-Disp-Medium.otf in Resources */,
+				527FD6561C7B934E00C0A9C4 /* Freight-Disp-Pro-Bold.otf in Resources */,
+				527FD6571C7B934E00C0A9C4 /* Freight-Disp-Pro-Medium-Italic.otf in Resources */,
+				527FD6581C7B934F00C0A9C4 /* Freight-Disp-Pro-Medium.otf in Resources */,
+				527FD6831C7D024B00C0A9C4 /* FPMPDPShareCustomView.xib in Resources */,
+				527FD6591C7B934F00C0A9C4 /* Freight-Disp-Pro-Semibold.otf in Resources */,
+				527FD6771C7CEBF100C0A9C4 /* FPMPDPColorCollectionViewCell.xib in Resources */,
+				527FD65A1C7B934F00C0A9C4 /* Freight-Disp-ProLight.otf in Resources */,
+				52ADEA391C77BB4600EDB5D3 /* Brandon_bld_it.otf in Resources */,
+				52ADEA3A1C77BB4600EDB5D3 /* Brandon_bld.otf in Resources */,
+				52ADEA3B1C77BB4600EDB5D3 /* Brandon_blk_it.otf in Resources */,
+				52ADEA3C1C77BB4600EDB5D3 /* Brandon_blk.otf in Resources */,
+				527FD67D1C7CF1A100C0A9C4 /* FPMPDPCustomizeCollectionViewCell.xib in Resources */,
+				527FD6711C7CE0CD00C0A9C4 /* FPMPDPFitCustomCollectionViewCell.xib in Resources */,
+				52ADEA3D1C77BB4600EDB5D3 /* Brandon_light_it.otf in Resources */,
+				52ADEA3E1C77BB4600EDB5D3 /* Brandon_light.otf in Resources */,
+				52ADEA3F1C77BB4600EDB5D3 /* Brandon_med_it.otf in Resources */,
+				52ADEA401C77BB4600EDB5D3 /* Brandon_med.otf in Resources */,
+				52ADEA411C77BB4600EDB5D3 /* Brandon_reg_it.otf in Resources */,
+				52ADEA421C77BB4600EDB5D3 /* Brandon_reg.otf in Resources */,
+				52ADEA431C77BB4600EDB5D3 /* Brandon_thin_it.otf in Resources */,
+				52ADEA441C77BB4600EDB5D3 /* Brandon_thin.otf in Resources */,
+				529400641C7F5CFA00007E61 /* FPMPDPPlaceOrderCustomView.xib in Resources */,
+				527FD65F1C7BA2D000C0A9C4 /* FPMAppointmentCustomView.xib in Resources */,
+				528D84B21C63EACC00EE0B36 /* LaunchScreen.storyboard in Resources */,
+				526274AE1C6BDDE2004C160D /* FPMProductCollectionReusableView.xib in Resources */,
+				527FD6901C7E20F600C0A9C4 /* FPMAdminOrdersTableViewCell.xib in Resources */,
+				527FD66B1C7BC60E00C0A9C4 /* FPMPDPThumbnailCollectionViewCell.xib in Resources */,
+				526274FF1C6D4DE5004C160D /* FPMFilterCollectionReusableView.xib in Resources */,
+				5206F0461C6920070049F199 /* video.mp4 in Resources */,
+				527FD6791C7CF0C700C0A9C4 /* FPMPDPCustomizeCutomView.xib in Resources */,
+				528D84AF1C63EACC00EE0B36 /* Assets.xcassets in Resources */,
+				527FD6671C7BC3F500C0A9C4 /* FPMPDPBottomCollectionViewCell.xib in Resources */,
+				527FD6811C7CF4EC00C0A9C4 /* FPMPDPOrderCustomView.xib in Resources */,
+				527FD68C1C7E181400C0A9C4 /* FPMAdminListOfOrdersCustomView.xib in Resources */,
+				526274D91C6D25A6004C160D /* FPMFilterView.xib in Resources */,
+				528D84AA1C63EACC00EE0B36 /* Main.storyboard in Resources */,
+				529400661C7F7DB700007E61 /* FPMAdminChangePassswordView.xib in Resources */,
+				526275051C710736004C160D /* BrowseFilters.json in Resources */,
+				527FD6731C7CEB7600C0A9C4 /* FPMPDPColorCustomView.xib in Resources */,
+				5206F03A1C6697E00049F199 /* FPMSlideShowCollectionViewCell.xib in Resources */,
+				526274AA1C6B8DFC004C160D /* FPMOverLaySearchView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		528D84B61C63EACC00EE0B36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		528D84C11C63EACD00EE0B36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		528D849D1C63EACC00EE0B36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				526274FE1C6D4DE5004C160D /* FPMFilterCollectionReusableView.swift in Sources */,
+				527FD6631C7BC2D300C0A9C4 /* FPMMagnifyingView.swift in Sources */,
+				527FD6661C7BC3F500C0A9C4 /* FPMPDPBottomCollectionViewCell.swift in Sources */,
+				527FD66A1C7BC60E00C0A9C4 /* FPMPDPThumbnailCollectionViewCell.swift in Sources */,
+				527FD65D1C7BA2C800C0A9C4 /* FPMAppointmentCustomView.swift in Sources */,
+				526275031C6E3176004C160D /* FPMFilterCollectionViewFlowLayout.swift in Sources */,
+				52ADEA5E1C77BEFB00EDB5D3 /* FPMPDPFitCustomView.swift in Sources */,
+				5206F0361C6697E00049F199 /* FPMApplication.swift in Sources */,
+				52ADEA621C77BF7F00EDB5D3 /* FPMPDPCustomizeCutomView.swift in Sources */,
+				526275091C710B55004C160D /* SwiftyJSON.swift in Sources */,
+				52ADEA6A1C77D06400EDB5D3 /* FPMSortByTableViewController.swift in Sources */,
+				5206F0391C6697E00049F199 /* FPMSlideShowCollectionViewCell.swift in Sources */,
+				527FD6761C7CEBF100C0A9C4 /* FPMPDPColorCollectionViewCell.swift in Sources */,
+				526274D51C6D1672004C160D /* FPMFilterViewController.swift in Sources */,
+				52ADEA5C1C77BE6A00EDB5D3 /* FPMPDPShareCustomView.swift in Sources */,
+				526274A81C6B8DE0004C160D /* FPMOverLaySearchView.swift in Sources */,
+				5206F0491C6928B90049F199 /* FPMQuizMainViewController.swift in Sources */,
+				52ADEA661C77CD2400EDB5D3 /* StringExtension.swift in Sources */,
+				52ADEA5A1C77BE0D00EDB5D3 /* FPMPDPViewController.swift in Sources */,
+				527FD67C1C7CF1A100C0A9C4 /* FPMPDPCustomizeCollectionViewCell.swift in Sources */,
+				527FD6701C7CE0CD00C0A9C4 /* FPMPDPFitCustomCollectionViewCell.swift in Sources */,
+				526274D71C6D2597004C160D /* FPMFilterView.swift in Sources */,
+				5206F0501C692A570049F199 /* FPMAboutFameAndPartnersViewController.swift in Sources */,
+				52ADEA681C77CE2E00EDB5D3 /* UIFontExtension.swift in Sources */,
+				52ADEA641C77CA0200EDB5D3 /* UIColorExtension.swift in Sources */,
+				5206F0381C6697E00049F199 /* FPMHomeViewController.swift in Sources */,
+				5206F0351C6697E00049F199 /* AppDelegate.swift in Sources */,
+				527FD6861C7E02C500C0A9C4 /* FPMAdminLoginCustomView.swift in Sources */,
+				5206F0541C692B3E0049F199 /* FPMSettingsViewController.swift in Sources */,
+				5206F03B1C6697E00049F199 /* FPMSlideShowCollectionViewController.swift in Sources */,
+				5206F0371C6697E00049F199 /* main.swift in Sources */,
+				527FD6611C7BC2AF00C0A9C4 /* FPMMagnifyingGlassView.swift in Sources */,
+				5206F03E1C669C700049F199 /* FPMScanDressViewController.swift in Sources */,
+				528D84AD1C63EACC00EE0B36 /* FPMacys.xcdatamodeld in Sources */,
+				529400621C7F5CEB00007E61 /* FPMPDPPlaceOrderCustomView.swift in Sources */,
+				5206F0561C692BE10049F199 /* FPMBrowseViewController.swift in Sources */,
+				52ADEA601C77BF1700EDB5D3 /* FPMPDPColorCustomView.swift in Sources */,
+				526275011C6E3146004C160D /* FPMSingleLineReusableView.swift in Sources */,
+				527FD67F1C7CF4DF00C0A9C4 /* FPMPDPOrderCustomView.swift in Sources */,
+				5206F0421C6918C50049F199 /* FPMVideoPlayerViewController.swift in Sources */,
+				526274AD1C6BDDE2004C160D /* FPMProductCollectionReusableView.swift in Sources */,
+				527FD68F1C7E20F600C0A9C4 /* FPMAdminOrdersTableViewCell.swift in Sources */,
+				5294006A1C7F9D7C00007E61 /* FPMAdminChangePassswordView.swift in Sources */,
+				529400681C7F92E800007E61 /* FPMCustomTextField.swift in Sources */,
+				527FD68A1C7E180900C0A9C4 /* FPMAdminListOfOrdersCustomView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		528D84B41C63EACC00EE0B36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52ADEA6B1C77D91400EDB5D3 /* FPMSortByTableViewController.swift in Sources */,
+				528D84BD1C63EACD00EE0B36 /* FPMacysTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		528D84BF1C63EACD00EE0B36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				528D84C81C63EACD00EE0B36 /* FPMacysUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		528D84BA1C63EACC00EE0B36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 528D84A01C63EACC00EE0B36 /* FPMacys */;
+			targetProxy = 528D84B91C63EACC00EE0B36 /* PBXContainerItemProxy */;
+		};
+		528D84C51C63EACD00EE0B36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 528D84A01C63EACC00EE0B36 /* FPMacys */;
+			targetProxy = 528D84C41C63EACD00EE0B36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		528D84A81C63EACC00EE0B36 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				528D84A91C63EACC00EE0B36 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		528D84B01C63EACC00EE0B36 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				528D84B11C63EACC00EE0B36 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		528D84CA1C63EACD00EE0B36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		528D84CB1C63EACD00EE0B36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		528D84CD1C63EACD00EE0B36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = FPMacys/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macys.FPMacys;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		528D84CE1C63EACD00EE0B36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = FPMacys/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macys.FPMacys;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		528D84D01C63EACD00EE0B36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FPMacysTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macys.FPMacysTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FPMacys.app/FPMacys";
+			};
+			name = Debug;
+		};
+		528D84D11C63EACD00EE0B36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FPMacysTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macys.FPMacysTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FPMacys.app/FPMacys";
+			};
+			name = Release;
+		};
+		528D84D31C63EACD00EE0B36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FPMacysUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macys.FPMacysUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FPMacys;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		528D84D41C63EACD00EE0B36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FPMacysUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macys.FPMacysUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FPMacys;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		528D849C1C63EACC00EE0B36 /* Build configuration list for PBXProject "FPMacys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				528D84CA1C63EACD00EE0B36 /* Debug */,
+				528D84CB1C63EACD00EE0B36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		528D84CC1C63EACD00EE0B36 /* Build configuration list for PBXNativeTarget "FPMacys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				528D84CD1C63EACD00EE0B36 /* Debug */,
+				528D84CE1C63EACD00EE0B36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		528D84CF1C63EACD00EE0B36 /* Build configuration list for PBXNativeTarget "FPMacysTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				528D84D01C63EACD00EE0B36 /* Debug */,
+				528D84D11C63EACD00EE0B36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		528D84D21C63EACD00EE0B36 /* Build configuration list for PBXNativeTarget "FPMacysUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				528D84D31C63EACD00EE0B36 /* Debug */,
+				528D84D41C63EACD00EE0B36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		528D84AB1C63EACC00EE0B36 /* FPMacys.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				528D84AC1C63EACC00EE0B36 /* FPMacys.xcdatamodel */,
+			);
+			currentVersion = 528D84AC1C63EACC00EE0B36 /* FPMacys.xcdatamodel */;
+			path = FPMacys.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 528D84991C63EACC00EE0B36 /* Project object */;
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>F&amp;P Macy&apos;s</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Freight-Big-Light.otf</string>
+		<string>Freight-Disp-Book-Italic.otf</string>
+		<string>Freight-Disp-Medium-Italic.otf</string>
+		<string>Freight-Disp-Medium.otf</string>
+		<string>Freight-Disp-Pro-Bold.otf</string>
+		<string>Freight-Disp-Pro-Medium-Italic.otf</string>
+		<string>Freight-Disp-Pro-Medium.otf</string>
+		<string>Freight-Disp-Pro-Semibold.otf</string>
+		<string>Freight-Disp-ProLight.otf</string>
+		<string>Freight-Disp-Semibold.otf</string>
+		<string>Brandon_bld_it.otf</string>
+		<string>Brandon_bld.otf</string>
+		<string>Brandon_blk_it.otf</string>
+		<string>Brandon_blk.otf</string>
+		<string>Brandon_light_it.otf</string>
+		<string>Brandon_light.otf</string>
+		<string>Brandon_med_it.otf</string>
+		<string>Brandon_med.otf</string>
+		<string>Brandon_reg_it.otf</string>
+		<string>Brandon_reg.otf</string>
+		<string>Brandon_thin_it.otf</string>
+		<string>Brandon_thin.otf</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+</dict>
+</plist>
