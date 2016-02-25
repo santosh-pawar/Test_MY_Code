@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FPMFilterCollectionReusableView" id="4XV-bc-9Yn" customClass="FPMFilterCollectionReusableView" customModule="FPMacys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="190" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kHV-7H-Y4x">
+                    <rect key="frame" x="0.0" y="0.0" width="190" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="1p4-Ul-ZEA"/>
+                        <constraint firstAttribute="width" constant="190" id="7Wy-V6-Jr8"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgb-KY-i9M">
+                    <rect key="frame" x="8" y="8" width="174" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="174" id="NkO-fo-aFw"/>
+                        <constraint firstAttribute="height" constant="24" id="bhr-e8-lbJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="kHV-7H-Y4x" firstAttribute="leading" secondItem="4XV-bc-9Yn" secondAttribute="leading" id="BFM-T1-9gM"/>
+                <constraint firstAttribute="trailing" secondItem="kHV-7H-Y4x" secondAttribute="trailing" id="H2q-l7-niV"/>
+                <constraint firstItem="wgb-KY-i9M" firstAttribute="top" secondItem="4XV-bc-9Yn" secondAttribute="top" constant="8" id="JPy-Q9-Fir"/>
+                <constraint firstItem="wgb-KY-i9M" firstAttribute="leading" secondItem="4XV-bc-9Yn" secondAttribute="leading" constant="8" id="KTF-6Q-B6o"/>
+                <constraint firstItem="kHV-7H-Y4x" firstAttribute="top" secondItem="4XV-bc-9Yn" secondAttribute="top" id="R9G-32-Ltt"/>
+                <constraint firstAttribute="bottom" secondItem="kHV-7H-Y4x" secondAttribute="bottom" id="Rkv-LA-UHA"/>
+                <constraint firstAttribute="bottom" secondItem="wgb-KY-i9M" secondAttribute="bottom" constant="8" id="aCL-Rm-SdV"/>
+                <constraint firstAttribute="trailing" secondItem="wgb-KY-i9M" secondAttribute="trailing" constant="8" id="hh7-UD-q2u"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="kHV-7H-Y4x" id="slF-od-rkw"/>
+                <outlet property="nameLabel" destination="wgb-KY-i9M" id="ucQ-td-SWg"/>
+            </connections>
+            <point key="canvasLocation" x="182" y="358"/>
+        </collectionReusableView>
+    </objects>
+</document>

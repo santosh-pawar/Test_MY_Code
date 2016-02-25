@@ -1,0 +1,61 @@
+{
+    "All Styles":[
+              "Two-Piece",
+              "One Shoulder",
+              "Strapless",
+              "V-Neck",
+              "Split",
+              "Backless",
+              "Lace",
+              "Maxi",
+              "Short Dresses"
+              ],
+    "Colors":[
+              "#006400",
+              "#C0C0C0",
+              "#9370db",
+              "#ffff00",
+              "#e5b292",
+              "#000000",
+              "#ffffff",
+              "#0000ff",
+              "#ff1493",
+              "#ff0000",
+              "#F49AC2",
+              "#ffb825",
+              "#892D52"
+              ],
+    "All Occations":[
+             "Formal",
+             "Birthday",
+             "Ball Gowns",
+             "Graduation",
+             "Homecoming",
+             "Debutante",
+             "Party",
+             "Red Carpet",
+             "Date Night",
+             "Wedding",
+             "Special Event",
+             "Bridesmaid",
+             "Prom",
+             "Sweet 16",
+             "Spring Racing",
+             "New Years Eve",
+             "Black Tie",
+             "Cocktail"
+             ],
+    "All Prices":[
+              "$0-$199",
+              "$200-$299",
+              "$300-$399",
+              "$400+",
+              "View All Prices"
+              ],
+    "Top Values":[
+            "All Styles",
+            "Colors",
+            "All Occations",
+            "All Prices"
+    ]
+}

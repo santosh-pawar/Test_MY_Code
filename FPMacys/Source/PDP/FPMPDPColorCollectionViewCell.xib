@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FPMPDPColorCollectionViewCell" id="gTV-IL-0wX" customClass="FPMPDPColorCollectionViewCell" customModule="FPMacys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="126" height="105"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="126" height="105"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rki-UU-EQB">
+                        <rect key="frame" x="8" y="8" width="110" height="60"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="9W4-xF-xOp"/>
+                            <constraint firstAttribute="width" constant="110" id="awH-tp-uiG"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coC-yX-rK4">
+                        <rect key="frame" x="8" y="76" width="110" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="rki-UU-EQB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="5m3-Zv-tSu"/>
+                <constraint firstItem="coC-yX-rK4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="6wg-1a-NJc"/>
+                <constraint firstAttribute="trailing" secondItem="coC-yX-rK4" secondAttribute="trailing" constant="8" id="HQN-jv-nmd"/>
+                <constraint firstItem="coC-yX-rK4" firstAttribute="top" secondItem="rki-UU-EQB" secondAttribute="bottom" constant="8" id="SW1-1V-E31"/>
+                <constraint firstItem="coC-yX-rK4" firstAttribute="top" secondItem="rki-UU-EQB" secondAttribute="bottom" constant="8" id="hDv-Dn-aNS"/>
+                <constraint firstAttribute="bottom" secondItem="coC-yX-rK4" secondAttribute="bottom" constant="8" id="hor-R1-dP6"/>
+                <constraint firstAttribute="trailing" secondItem="rki-UU-EQB" secondAttribute="trailing" constant="8" id="jgA-Si-kGt"/>
+                <constraint firstItem="rki-UU-EQB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="ohf-DC-iTl"/>
+            </constraints>
+            <size key="customSize" width="139" height="104"/>
+            <connections>
+                <outlet property="colourView" destination="rki-UU-EQB" id="fjk-v0-jVE"/>
+                <outlet property="nameLabel" destination="coC-yX-rK4" id="uf5-xQ-XkC"/>
+            </connections>
+            <point key="canvasLocation" x="275" y="313"/>
+        </collectionViewCell>
+    </objects>
+</document>

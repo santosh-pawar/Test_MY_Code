@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FPMPDPFitCustomView" customModule="FPMacys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="260"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUB-zc-3Yk">
+                    <rect key="frame" x="708" y="15" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="3zk-Zz-oFT"/>
+                        <constraint firstAttribute="width" constant="45" id="rLD-Vw-nGv"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Close_Icon"/>
+                    <connections>
+                        <action selector="closeButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="KGP-dd-xBF"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2EO-se-AI0">
+                    <rect key="frame" x="226" y="15" width="379" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="379" id="VnE-KF-fPx"/>
+                        <constraint firstAttribute="height" constant="40" id="dap-LH-ZBC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xnl-17-ygp">
+                    <rect key="frame" x="0.0" y="68" width="768" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="0cP-Ot-0W7"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="nUm-Po-eH8">
+                    <rect key="frame" x="0.0" y="69" width="768" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="B9G-hN-dMN"/>
+                        <constraint firstAttribute="width" constant="768" id="k1J-yb-732"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="AUh-Qz-Zrk">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="Y08-sm-fqD"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="IHZ-Rt-wbV"/>
+                    </connections>
+                </collectionView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="dqq-Gn-3Pr">
+                    <rect key="frame" x="8" y="164" width="760" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="760" id="YZP-55-Sz8"/>
+                        <constraint firstAttribute="height" constant="45" id="YoH-D6-lX7"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hpN-iE-vrg">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="CfA-KZ-dLu"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="A1l-Tc-puT"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="KUB-zc-3Yk" firstAttribute="leading" secondItem="2EO-se-AI0" secondAttribute="trailing" constant="103" id="3Ul-xU-eUE"/>
+                <constraint firstItem="dqq-Gn-3Pr" firstAttribute="top" secondItem="nUm-Po-eH8" secondAttribute="bottom" constant="45" id="9GC-YL-kFN"/>
+                <constraint firstAttribute="trailing" secondItem="dqq-Gn-3Pr" secondAttribute="trailing" id="A0P-eZ-tYt"/>
+                <constraint firstItem="2EO-se-AI0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="226" id="DEC-QF-3I7"/>
+                <constraint firstItem="nUm-Po-eH8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DoJ-5C-9Kb"/>
+                <constraint firstAttribute="trailing" secondItem="nUm-Po-eH8" secondAttribute="trailing" id="ItA-m7-qeu"/>
+                <constraint firstItem="nUm-Po-eH8" firstAttribute="top" secondItem="xnl-17-ygp" secondAttribute="bottom" id="TIV-LQ-ZzO"/>
+                <constraint firstItem="dqq-Gn-3Pr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="TVN-Xj-FLs"/>
+                <constraint firstAttribute="bottom" secondItem="dqq-Gn-3Pr" secondAttribute="bottom" constant="51" id="ZO7-zh-fK3"/>
+                <constraint firstAttribute="trailing" secondItem="KUB-zc-3Yk" secondAttribute="trailing" constant="15" id="aA4-17-lwW"/>
+                <constraint firstItem="xnl-17-ygp" firstAttribute="top" secondItem="KUB-zc-3Yk" secondAttribute="bottom" constant="8" id="bDC-si-JcR"/>
+                <constraint firstItem="xnl-17-ygp" firstAttribute="leading" secondItem="nUm-Po-eH8" secondAttribute="leading" id="biE-fm-hyl"/>
+                <constraint firstItem="xnl-17-ygp" firstAttribute="top" secondItem="2EO-se-AI0" secondAttribute="bottom" constant="13" id="suH-e1-65e"/>
+                <constraint firstItem="2EO-se-AI0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="yzq-a7-xix"/>
+                <constraint firstItem="xnl-17-ygp" firstAttribute="trailing" secondItem="nUm-Po-eH8" secondAttribute="trailing" id="z6q-Tz-SYq"/>
+                <constraint firstItem="KUB-zc-3Yk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="zKa-tp-Nsl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bottomCollectionView" destination="dqq-Gn-3Pr" id="sO2-nP-raY"/>
+                <outlet property="titleLabel" destination="2EO-se-AI0" id="UwV-5d-RL4"/>
+                <outlet property="topCollectionView" destination="nUm-Po-eH8" id="vN6-qa-Eor"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="Close_Icon" width="50" height="50"/>
+    </resources>
+</document>

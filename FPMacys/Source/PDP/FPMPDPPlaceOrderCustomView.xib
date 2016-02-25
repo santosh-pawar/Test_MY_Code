@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Freight-Disp-Book-Italic.otf">
+            <string>Freight-DispBookItalic</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view alpha="0.69999998807907104" contentMode="scaleToFill" id="TUJ-L5-diJ" customClass="FPMPDPPlaceOrderCustomView" customModule="FPMacys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="510" height="750"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tqr-zB-sYP">
+                    <rect key="frame" x="450" y="15" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="Spo-Iz-eUP"/>
+                        <constraint firstAttribute="height" constant="45" id="WUX-nr-L0D"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Close_Icon"/>
+                    <connections>
+                        <action selector="closeButtonTapped:" destination="TUJ-L5-diJ" eventType="touchUpInside" id="sEN-9E-HOo"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5J6-DS-erI">
+                    <rect key="frame" x="67" y="43" width="376" height="129"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="376" id="E2b-nD-bJP"/>
+                        <constraint firstAttribute="height" constant="129" id="GyS-as-8wv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Freight-DispBookItalic" family="Freight" pointSize="50"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nTM-Rf-EHx">
+                    <rect key="frame" x="220" y="247" width="70" height="2"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="9ej-2U-x1r"/>
+                        <constraint firstAttribute="height" constant="2" id="FXd-jH-eqq"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="chF-5y-jft">
+                    <rect key="frame" x="220" y="669" width="70" height="2"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="Pip-Sk-cIx"/>
+                        <constraint firstAttribute="width" constant="70" id="oad-ex-OAn"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFA-9y-vvM">
+                    <rect key="frame" x="8" y="316" width="494" height="282"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="494" id="Bqr-Pm-P4h"/>
+                        <constraint firstAttribute="height" constant="282" id="XQT-Np-j7y"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Tqr-zB-sYP" firstAttribute="leading" secondItem="5J6-DS-erI" secondAttribute="trailing" constant="7" id="4si-5d-cBL"/>
+                <constraint firstItem="tFA-9y-vvM" firstAttribute="top" secondItem="Tqr-zB-sYP" secondAttribute="bottom" constant="256" id="5Qz-sW-thR"/>
+                <constraint firstItem="chF-5y-jft" firstAttribute="leading" secondItem="TUJ-L5-diJ" secondAttribute="leading" constant="220" id="6Ve-N9-5A3"/>
+                <constraint firstAttribute="trailing" secondItem="nTM-Rf-EHx" secondAttribute="trailing" constant="220" id="6Y6-Px-4RS"/>
+                <constraint firstItem="5J6-DS-erI" firstAttribute="leading" secondItem="TUJ-L5-diJ" secondAttribute="leading" constant="67" id="7r1-GK-iwx"/>
+                <constraint firstAttribute="trailing" secondItem="Tqr-zB-sYP" secondAttribute="trailing" constant="15" id="7uh-p9-PAU"/>
+                <constraint firstItem="nTM-Rf-EHx" firstAttribute="top" secondItem="5J6-DS-erI" secondAttribute="bottom" constant="75" id="A7K-9s-sxD"/>
+                <constraint firstItem="chF-5y-jft" firstAttribute="top" secondItem="tFA-9y-vvM" secondAttribute="bottom" constant="71" id="AHP-Be-D3G"/>
+                <constraint firstAttribute="trailing" secondItem="chF-5y-jft" secondAttribute="trailing" constant="220" id="Azf-2A-Vzf"/>
+                <constraint firstItem="tFA-9y-vvM" firstAttribute="top" secondItem="nTM-Rf-EHx" secondAttribute="bottom" constant="67" id="QBd-Wt-khD"/>
+                <constraint firstItem="nTM-Rf-EHx" firstAttribute="top" secondItem="5J6-DS-erI" secondAttribute="bottom" constant="75" id="RT1-IQ-SzQ"/>
+                <constraint firstItem="chF-5y-jft" firstAttribute="top" secondItem="tFA-9y-vvM" secondAttribute="bottom" constant="71" id="acH-vz-TaI"/>
+                <constraint firstItem="Tqr-zB-sYP" firstAttribute="top" secondItem="TUJ-L5-diJ" secondAttribute="top" constant="15" id="bmq-2A-DxV"/>
+                <constraint firstItem="Tqr-zB-sYP" firstAttribute="leading" secondItem="5J6-DS-erI" secondAttribute="trailing" constant="7" id="cGk-Rx-UYY"/>
+                <constraint firstItem="nTM-Rf-EHx" firstAttribute="leading" secondItem="TUJ-L5-diJ" secondAttribute="leading" constant="220" id="cxX-YQ-EaJ"/>
+                <constraint firstItem="tFA-9y-vvM" firstAttribute="leading" secondItem="TUJ-L5-diJ" secondAttribute="leading" constant="8" id="iwy-NJ-uvU"/>
+                <constraint firstAttribute="trailing" secondItem="tFA-9y-vvM" secondAttribute="trailing" constant="8" id="k2z-ov-n8v"/>
+                <constraint firstItem="5J6-DS-erI" firstAttribute="top" secondItem="TUJ-L5-diJ" secondAttribute="top" constant="43" id="p0O-1E-31m"/>
+                <constraint firstItem="tFA-9y-vvM" firstAttribute="top" secondItem="nTM-Rf-EHx" secondAttribute="bottom" constant="67" id="p2c-JO-pl1"/>
+                <constraint firstAttribute="bottom" secondItem="chF-5y-jft" secondAttribute="bottom" constant="79" id="yYd-Vc-9gX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="thanksInfoLabel" destination="tFA-9y-vvM" id="CJR-fQ-kT7"/>
+                <outlet property="thanksLabel" destination="5J6-DS-erI" id="mg0-dK-4tb"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="Close_Icon" width="50" height="50"/>
+    </resources>
+</document>
